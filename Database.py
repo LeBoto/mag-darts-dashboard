@@ -111,7 +111,7 @@ class Database(object):
         self.__cursor.execute(query)
         return self.__cursor.fetchone()
 
-    def execute(command, inputs=()):
+    def execute(self, command, inputs=()):
         self.__cursor.execute(command, inputs)
 
     def _score(self, tosses):
